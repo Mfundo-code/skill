@@ -1,6 +1,6 @@
 // src/components/Footer.jsx
 import React from 'react';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,6 +10,7 @@ const Footer = () => {
       backgroundColor: '#0f1f4d',
       color: 'white',
       padding: '50px 5%',
+      fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
     },
     container: {
       maxWidth: '1200px',
@@ -100,8 +101,13 @@ const Footer = () => {
             Our qualified tutors help students excel in their studies with personalized learning approaches.
           </p>
           <div style={styles.socialIcons}>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/profile.php?id=61580367321266" target="_blank" rel="noopener noreferrer">
               <FaFacebook style={styles.socialIcon} 
+                onMouseEnter={(e) => e.target.style.color = '#4a6fff'} 
+                onMouseLeave={(e) => e.target.style.color = 'white'} />
+            </a>
+            <a href="https://wa.me/27687479018" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp style={styles.socialIcon} 
                 onMouseEnter={(e) => e.target.style.color = '#4a6fff'} 
                 onMouseLeave={(e) => e.target.style.color = 'white'} />
             </a>
@@ -110,8 +116,8 @@ const Footer = () => {
                 onMouseEnter={(e) => e.target.style.color = '#4a6fff'} 
                 onMouseLeave={(e) => e.target.style.color = 'white'} />
             </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter style={styles.socialIcon} 
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <FaInstagram style={styles.socialIcon} 
                 onMouseEnter={(e) => e.target.style.color = '#4a6fff'} 
                 onMouseLeave={(e) => e.target.style.color = 'white'} />
             </a>
@@ -270,9 +276,15 @@ const Footer = () => {
             <span style={styles.contactText}>068 747 9018</span>
           </div>
           <div style={styles.contactItem}>
+            <FaWhatsapp style={{ color: '#4a6fff', fontSize: '1.2rem', flexShrink: 0 }} />
+            <a href="https://wa.me/27687479018" style={{...styles.contactText, textDecoration: 'none', color: '#cbd5e1'}}>
+              +27 68 747 9018
+            </a>
+          </div>
+          <div style={styles.contactItem}>
             <FaEnvelope style={{ color: '#4a6fff', fontSize: '1.2rem', flexShrink: 0 }} />
-            <a href="mailto:pietervdm1982@gmail.com" style={{...styles.contactText, textDecoration: 'none', color: '#cbd5e1'}}>
-              pietervdm1982@gmail.com
+            <a href="mailto:admin@skill-hive.co.za" style={{...styles.contactText, textDecoration: 'none', color: '#cbd5e1'}}>
+              admin@skill-hive.co.za
             </a>
           </div>
         </div>
