@@ -111,9 +111,18 @@ SERVER_EMAIL = 'mfundoknox@gmail.com'
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'localhost', 
+    '127.0.0.1', 
+    "skill-hive.co.za", 
+    "www.skill-hive.co.za", 
+    "207.180.201.93"
+]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "skill-hive.co.za",
+    "www.skill-hive.co.za",
+    "207.180.201.93"
 ]
